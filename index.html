@@ -8,7 +8,7 @@
     <title>하천 수위 정보 알림 - River Level Info</title>
     <link rel="icon" href="/favicon.ico">
     <script type="text/javascript"
-    src="https://map.vworld.kr/js/vworldMapInit.js.do?version=2.0&apiKey=DA227030-273E-37F4-A3DD-73D741FD3A5B&domain=localhost"></script>
+    src="https://map.vworld.kr/js/vworldMapInit.js.do?version=2.0&apiKey=DA227030-273E-37F4-A3DD-73D741FD3A5B&domain=riverlevel-info.kr"></script>
 </head>
 <body>
     <h1>서비스 준비중입니다. Opening Soon</h1>
@@ -43,8 +43,26 @@
             fill: {color: '#000'},
             stroke: {color: '#fff', width: 2},
             text: '불광천 증산교'
-        },
-//        attr: {"id":"maker01","name":"속성명1"}
+        }
+    };
+    markerLayer.addMarker(vw.ol3.markerOption);
+    vmap.addLayer(markerLayer);
+    
+    vw.ol3.markerOption = {
+        x : 14128344.9523401,
+        y : 4518626.2154397,
+        epsg : "EPSG:3857",
+        title : '홍제천 사천교',
+        contents : '홍제천 사천교 위치입니다.',
+        iconUrl : 'http://map.vworld.kr/images/ol3/marker_blue.png',
+        text : {
+            offsetX: 0.5, //위치설정
+            offsetY: 20,   //위치설정
+            font: '12px Calibri,sans-serif',
+            fill: {color: '#000'},
+            stroke: {color: '#fff', width: 2},
+            text: '홍제천 사천교'
+        }
     };
     markerLayer.addMarker(vw.ol3.markerOption);
     vmap.addLayer(markerLayer);
