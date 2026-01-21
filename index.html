@@ -13,8 +13,9 @@
 </head>
 <body>
     <h1>서비스 준비중입니다. Opening Soon</h1>
-    <p>저와 연락하고 싶으시면, rudesloth@gmail.com으로 이메일을 보내주세요. </p>
-    <div id="vmap"></div>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSculavkKLqlbaxQeB7iM5horoVSCi0amN-1h4vmRT38mxG_Yw/viewform?usp=publish-editor" target="_blank">사이트에 대한 의견 보내기</p>
+
+    <div id="vmap">
     <script type="text/javascript">
     vw.ol3.CameraPosition.center = [14135322.3133077,4514170.2785697];
     vw.ol3.CameraPosition.zoom = 12;
@@ -37,13 +38,13 @@
         epsg : "EPSG:3857",//EPSG:3857 기반 좌표
         title : '불광천 증산교',
         contents : '불광천 증산교 위치입니다.',
-        iconUrl : 'http://map.vworld.kr/images/ol3/marker_blue.png',
+        iconUrl : href="/pin2.png",
         text : {
-            offsetX: 1, 
-            offsetY: 10,//핀 위치설정
-            font: '12px Calibri,sans-serif',
+            offsetX: -20,
+            offsetY: 12,//핀 위치설정
+            font: '15px Calibri,sans-serif',//글자 크기 및 폰트 설정
             fill: {color: '#000'},//글자색 설정
-            stroke: {color: '#fff', width: 2},
+            stroke: {color: '#fff', width: 4},
             text: '불광천 증산교'
         }
     };
@@ -56,19 +57,20 @@
         epsg : "EPSG:3857",//EPSG:3857 기반 좌표
         title : '홍제천 사천교',
         contents : '홍제천 사천교 위치입니다.',
-        iconUrl : 'http://map.vworld.kr/images/ol3/marker_blue.png',
+        iconUrl : href="/pin2.png",
         text : {
-            offsetX: 1,
-            offsetY: 10,//핀 위치 설정
-            font: '12px Calibri,sans-serif',
+            offsetX: -20,
+            offsetY: 12,//핀 위치 설정
+            font: '15px Calibri,sans-serif',//글자 크기 및 폰트 설정
             fill: {color: '#000'},//글자색 설정
-            stroke: {color: '#fff', width: 2},//글자 테두리 설정
+            stroke: {color: '#fff', width: 4},//글자 테두리 설정
             text: '홍제천 사천교'
         }
     };
     markerLayer.addMarker(vw.ol3.markerOption);
     vmap.addLayer(markerLayer);
     </script>
+    </div>
 
 
 
