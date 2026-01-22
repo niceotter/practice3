@@ -12,10 +12,7 @@
     };
     let vmap = new vw.ol3.Map("vmap", vw.ol3.MapOptions);
 
-
-    
     let markerLayer = new vw.ol3.layer.Marker(vmap);
-
     vw.ol3.markerOption = {
         x : 14126754.2858722,
         y : 4519757.4390882,
